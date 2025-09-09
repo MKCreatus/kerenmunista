@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Nosso Amor 💖</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), 
+        url('81907bbf-31d6-460d-8416-985738b65639.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #f5f5f5;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2em;
+      font-style: italic;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 20px;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    }
+    #inicio {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #iniciar {
+      padding: 15px 40px;
+      font-size: 20px;
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+    #iniciar:hover {
+      transform: scale(1.08);
+      background: rgba(255, 77, 148, 0.7);
+      box-shadow: 0 6px 25px rgba(255, 77, 148, 0.9);
+    }
+    #conteudo {
+      display: none;
+      animation: fadeIn 2s ease-in-out;
+      margin-top: 20px;
+      padding-bottom: 40px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    iframe {
+      margin: 20px auto;
+      display: block;
+    }
+    .contador {
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 12px;
+      max-width: 800px;
+      font-size: 18px;
+      line-height: 1.6em;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .contador h2 {
+      margin-bottom: 10px;
+      color: #ffb6c1;
+      font-weight: 500;
+    }
+    .contador p {
+      font-size: 16px;
+      line-height: 1.8em;
+      color: #fff;
+    }
+    .contador strong {
+      color: #ffb6c1;
+      font-weight: 600;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .galeria img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.8);
+    }
+    /* Lightbox */
+    #lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    #lightbox img {
+      max-width: 90%;
+      max-height: 85%;
+      border-radius: 10px;
+    }
+    /* Fantasma Comunista */
+    #ghost {
+      position: fixed;
+      width: 70px;
+      pointer-events: none;
+      z-index: 2000;
+      transition: transform 0.1s linear;
+    }
+  </style>
+</head>
+<body>
+  <!-- Tela inicial -->
+  <div id="inicio">
+    <h1>Apenas um lugar para deixarmos sempre registrado nosso amor</h1>
+    <button id="iniciar">Iniciar</button>
+    <img id="ghost" src="MERE/fantasma.png" alt="Fantasma do comunismo">
+  </div>
+
+  <!-- Conteúdo -->
+  <div id="conteudo">
+    <!-- Música -->
+    <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/track/1Dgcy5t2hwVGWqvbMJr88F?utm_source=generator" 
+      width="300" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture">
+    </iframe>
+
+    <!-- Contadores -->
+    <div class="contador">
+      <h2>⏳ Tempo casadas (desde 24/02/2024)</h2>
+      <p id="casadas"></p>
+    </div>
+
+    <div class="contador">
+      <h2>💞 Tempo juntas (desde 22/02/2020)</h2>
+      <p id="juntas"></p>
+    </div>
+
+    <!-- Galeria -->
+    <div class="galeria">
+      <img src="MERE/IMG-20241213-WA0033.jpg" alt="">
+      <img src="MERE/IMG-20220522-WA0009.jpg" alt="">
+      <img src="MERE/PXL_20250720_134357168.jpg" alt="">
+      <img src="MERE/IMG-20220320-WA0014.jpg" alt="">
+      <img src="MERE/IMG-20250908-WA0203.jpg" alt="">
+      <img src="MERE/IMG-20220517-WA0051.jpg" alt="">
+      <img src="MERE/2020-12-21-013528382.jpg" alt="">
+      <img src="MERE/IMG-20220117-WA0041.jpg" alt="">
+      <img src="MERE/IMG-20250906-WA0057.jpg" alt="">
+      <img src="MERE/PXL_20250824_145133344.jpg" alt="">
+      <img src="MERE/IMG-20241213-WA0040.jpg" alt="">
+      <img src="MERE/IMG-20220714-WA0148.jpg" alt="">
+      <img src="MERE/IMG_20220723_173119.jpg" alt="">
+      <img src="MERE/IMG-20241206-WA0017.jpg" alt="">
+      <img src="MERE/IMG-20250222-WA0000.jpg" alt="">
+      <img src="MERE/IMG_20230222_120221_770.webp" alt="">
+      <img src="MERE/2020-09-29-115806087.jpg" alt="">
+      <img src="MERE/IMG-20241217-WA0002.jpg" alt="">
+      <img src="MERE/IMG_20250710_173759_006.webp" alt="">
+      <img src="MERE/npp3uf.jpg" alt="">
+      <img src="MERE/PXL_20250524_221318498.jpg" alt="">
+      <img src="MERE/IMG_20220712_204813.jpg" alt="">
+      <img src="MERE/IMG_0528-Aprimorado-NR.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    // Botão iniciar
+    document.getElementById("iniciar").addEventListener("click", function() {
+      document.getElementById("inicio").style.display = "none";
+      document.getElementById("conteudo").style.display = "block";
+    });
+
+    // Lightbox
+    const galeriaImgs = document.querySelectorAll(".galeria img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    galeriaImgs.forEach(img => {
+      img.addEventListener("click", e => {
+        e.preventDefault();
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    // Fantasma seguindo o mouse
+    const ghost = document.getElementById("ghost");
+    document.addEventListener("mousemove", (e) => {
+      ghost.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
+    });
+
+    // Contadores
+    function atualizarContadores() {
+      const agora = new Date();
+
+      // Casadas desde 24/02/2024
+      const casadasInicio = new Date("2024-02-24T00:00:00");
+      let diffCasadas = agora - casadasInicio;
+
+      // Juntas desde 22/02/2020
+      const juntasInicio = new Date("2020-02-22T00:00:00");
+      let diffJuntas = agora - juntasInicio;
+
+      function formatar(diferenca) {
+        let segundos = Math.floor(diferenca / 1000);
+        let minutos = Math.floor(segundos / 60);
+        let horas = Math.floor(minutos / 60);
+        let dias = Math.floor(horas / 24);
+        let anos = Math.floor(dias / 365);
+        let meses = Math.floor(dias / 30);
+
+        const f = new Intl.NumberFormat('pt-BR');
+
+        return `
+          <strong>${f.format(anos)}</strong> anos, 
+          <strong>${f.format(meses)}</strong> meses, 
+          <strong>${f.format(dias)}</strong> dias<br>
+          <strong>${f.format(horas)}</strong> horas, 
+          <strong>${f.format(minutos)}</strong> minutos e 
+          <strong>${f.format(segundos)}</strong> segundos
+        `;
+      }
+
+      document.getElementById("casadas").innerHTML = formatar(diffCasadas);
+      document.getElementById("juntas").innerHTML = formatar(diffJuntas);
+    }
+
+    setInterval(atualizarContadores, 1000);
+    atualizarContadores();
+  </script>
+</body>
+</html>
